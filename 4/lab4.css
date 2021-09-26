@@ -1,0 +1,56 @@
+*{
+    font-family: 'Bradley Hand ITC';
+    font-weight: 600;
+    font-size: 20px;
+    color: cornsilk;
+}
+
+div{
+    width: 500px;
+}
+
+body{
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-repeat: repeat-y;
+    /* background-repeat: no-repeat; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image:url("resourcefiles/bears.jpg");
+}
+form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+#select_block{
+    display: none;
+}
+select{
+    background-color: #251f1f;
+}
+.overlay1 {
+    background: rgba(24, 21, 21, 0.4); /* Полупрозрачный фон */
+    border-radius: 2px; /* Радиус скругления */
+    width: 500px;
+   }
+option:focus{
+    background-color: cornsilk;
+    color:#251f1f;
+}
+
+#move_button, #another_button, #add_button,#add_button_name{
+    background: transparent;
+    border: solid 3px  cornsilk;
+}
+
+#add_button:hover{
+    background-color: rgb(53, 110, 70);
+}
+
+p{
+    color: inherit;
+}

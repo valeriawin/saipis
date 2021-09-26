@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 30px solid #c39cff;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: -5px;
+  background: linear-gradient(to top, #ffc0cb, #d09eff) no-repeat;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -12px;
+  /* margin-top: -12px;*/
+  padding-left: -4px;
+  margin-right: -2px;
+}
+
+header {
+  width: 300px;
+  height: 50px;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  background: #c39cff;
+}
+h1 {
+  padding-left: 25px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+aside {
+  background: rgba(195, 156, 255, 0.42);
+  margin-right: 5px;
+  margin-left: 60px;
+  padding: 5px;
+  width: 330px;
+
+  font-size: 20px;
+  border-radius: 25px;
+  position: fixed;
+  right: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 15px 25px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+.menu a {
+  border-radius: 10px;
+  color: #391c40;
+  box-shadow: inset 0 -10px 0 #391c40;
+}
+.menu a:hover {
+  box-shadow: inset 0 -90px 0 rgb(57, 28, 64), 4px 4px 3px rgba(0, 0, 0, 0.3);
+  color: rgba(222, 185, 187, 0.9);
+}
+
+article {
+  padding-top: 15px;
+  padding-left: 50px;
+  font-size: 23px;
+  margin-right: 400px;
+}
+
+svg {
+  position: inherit;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+table {
+  margin: 50px 400px 50px 45px;
+}
+.city {
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(33, 113, 125, 0.69);
+}
+
+td,
+tr {
+  padding: 5px 5px 0px 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+tr:hover {
+  background: rgba(213, 171, 255, 0.44);
+}
+
+p::first-letter {
+  font-size: 25px;
+  padding-left: 15px;
+  color: #420a72;
+  text-shadow: 1px 1px 1px rgba(61, 1, 231, 0.74);
+
+  font-style: italic;
+}
+
+p::after {
+  content: "\00A9"; /* Добавляемый символ */
+}
+
+.blink {
+  position: absolute;
+  top: 455px;
+  left: 25px;
+  animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: rgb(53, 189, 0);
+  }
+  33% {
+    color: rgb(189, 0, 189);
+  }
+  67% {
+    color: rgb(44, 0, 202);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}

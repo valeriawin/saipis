@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос ценителей классической музыки</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../resourse/smile.png" type="image/x-icon" />
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <div class="text">Опрос ценителей классической музыки</div>
+    </header>
+    <div class="container-1">
+
+        <nav class="nav">
+            <h3>Навигация</h3>
+            <ul>
+                <li><a href="result.html">Результаты опроса</a></li>
+                <li><a id="cleanUp">Очистить форму</a></li>
+            </ul>
+        </nav>
+
+        <article class="article">
+            <form class="container-2" id="opros">
+                <h2>Вопросы</h2>
+                <div class="box1">
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <label for="fullname">ФИО<em>*</em></label>
+                        <input type="text" placeholder="Введите ФИО" id="fullname"
+                               required minlength="2" maxlength="100" pattern="^[А-Яа-яЁёA-Za-z\s]+$"><br>
+                        <label for="date">День рождения</label><br>
+                        <input type="date" id="date" name="date"><br>
+                        <label for="rad1" for="rad2">Ваш пол:</label>
+                        <label for="rad1" style="margin-left: 15px;">Мужской</label>
+                        <input type="radio" name="radio" id="rad1" value="Мужской">
+                        <label for="rad2" style="margin-left: 15px;">Женский</label>
+                        <input type="radio" name="radio" id="rad2" value="Женский">
+                    </fieldset>
+                </div>
+
+                <div class="box2">
+                    <fieldset>
+                        <legend>Персональная информация</legend>
+                        <label for="instrument">Любимый инструмент</label>
+                        <select name="instrument" id="instrument">
+                            <option value="Другой вариант">Другой вариант</option>
+                            <option value="Пианино">Пианино</option>
+                            <option value="Фортепиано">Фортепиано</option>
+                            <option value="Виолончель">Виолончель</option>
+                            <option value="Скрипка">Скрипка</option>
+                            <option value="Альт">Альт</option>
+                            <option value="Акапелла">Акапелла</option>
+                        </select><br>
+                        <label for="textarea">Произведения какого композитора Вы слушаете чаще всего?<em>*</em></label>
+                        <textarea cols="40%" rows="5%" placeholder="Введите фамилию композитора" id="textarea"
+                                  maxlength="200" required pattern="^[А-Яа-яЁёA-Za-z.\s]+$"></textarea>
+                    </fieldset>
+                </div>
+
+                <div class="box3">
+                    <fieldset>
+                        <legend>Общая оценка расссылок нашего сайта</legend>
+                        <label for="month">Рассылка какого месяца Вам понравилась больше всего?</label><br>
+                        <input type="month" id="month" name="month"><br>
+                        <label for="email">Подтвердите свой email</label><br>
+                        <input type="email" id="email" name="email"><br>
+                    </fieldset>
+                </div>
+
+                <div class="box4">
+                    <input type="reset" value="Сбросить">
+                    <input type="submit" value="Отправить">
+                </div>
+
+            </form>
+        </article>
+
+        
+
+        <aside class="aside">
+            <h3>Цель опроса</h3>
+            <blockquote>
+                <p class="text1"> Пожалуйста, в целях улучшения качества рассылки, 
+                    уделите буквально минуту на прохождение небольшого опроса, 
+                    который поможет нам сориентироваться, где есть какие-либо недочёты. Благодарим Вас!
+                </p>
+                <cite>Администрация</cite>
+            </blockquote>
+        </aside>
+
+    </div>
+    
+    <footer class="footer">
+        <span>©2021 Baranova V.S.</span>
+    </footer>
+
+</div>
+<script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lab4.css">
+    <link rel="shortcut icon" href="resourcefiles/smile.png" type="image/x-icon" />
+    <title>Gummy Bears</title>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <form name="countries" id="form">
+
+        <div id="background_color">
+            <select required name="background">
+                <option value="Choose">Choose a background color for the text</option>
+                <option value="Blue">Blue</option>
+                <option value="White">White</option>
+                <option value="Pink">Pink</option>
+                <option value="Powdery">Powdery</option>
+            </select>
+        </div>
+
+        <div id="select_block_tcolor">
+            <select required name="font-color">
+                <option value="Choose">Select text color</option>
+                <option value="Turquoise">Turquoise</option>
+                <option value="Red">Red</option>
+                <option value="Lilac">Lilac</option>
+                <option value="Carall">Carall</option>
+            </select>
+        </div>
+
+        <div>
+            <select id="font-style">
+                <option value="Choose">Select font style</option>
+                <option value="Italic">Italic</option>
+                <option value="Oblique">Oblique</option>
+                <option value="Regular">Regular</option>
+            </select>
+        </div>
+
+        <div id="paragraf" class="overlay1">
+            <p>
+                Gummy bears (German: Gummibär) are small, fruit gum candies, similar to a jelly baby in some
+                English-speaking countries. The candy is roughly 2 cm (0.8 in) long and shaped in the form of a bear.
+                The gummy bear is one of many gummies, popular gelatin-based candies sold in a variety of shapes and
+                colors. 
+                <br><br>
+                The success of gummi bears has spawned the production of many other gummy candies that look like animals
+                and other objects: rings, worms, frogs, snakes, hamburgers, cherries, sharks, penguins, hippos,
+                lobsters, octopuses, apples, peaches, oranges, and even Ampelmännchen, Smurfs, and spiders.
+                <br><br>
+                In the United States, Haribo gummy bears are sold in five flavors: raspberry (red); orange (orange);
+                strawberry (green); pineapple (colorless); and lemon (yellow). Trolli's bears are similarly most
+                often sold in five flavors in the United States, and in the same colors.
+            </p>
+        </div>
+        <div id="last"></div>
+        <button id="add_button" type="button" onclick="act()">Apply</button>
+        <button id="add_button" type="button" onclick="add_text()" value="red">Add text</button>
+
+    </form>
+</body>
+
+</html>

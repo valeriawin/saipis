@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты опроса</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../resourse/smile.png" type="image/x-icon" />
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <div class="text">Любители классической музыки</div>
+    </header>
+    <div class="container-1">
+
+        <nav class="nav">
+            <h3>Навигация</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <!-- <li><a href="" id="closeTab">Покинуть опрос</a></li> -->
+            </ul>
+        </nav>
+
+        <article class="article">
+            <table>
+                <script language="javascript" type="text/javascript">
+
+                    function resulter(array) {
+                        let result = '';
+
+                        for (let i = 0; i < array.length; i++) {
+                            result += ' ' + array[i] + ' ';
+                        }
+                        return result;
+                    }
+
+                    document.write("<tr><td>№</td>");
+                    document.write("<td>ФИО</td>");
+                    document.write("<td>Пол</td>");
+                    document.write("<td>День рождения</td>");
+                    document.write("<td>Инструмент</td>");
+                    document.write("<td>Композитор</td>");
+                    document.write("<td>Месяц</td>");
+                    document.write("<td>Email</td></tr>");
+
+                    var len = localStorage.length;
+
+                    for (var i = 0; i < len; ++i) {
+
+                        const answers = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+                        document.write("<tr><td>" + (i + 1) + "</td>");
+                        document.write("<td>" + answers.fullName + "</td>");
+                        document.write("<td>" + answers.pol + "</td>");
+                        document.write("<td>" + answers.date + "</td>");
+                        document.write("<td>" + answers.instrument + "</td>");
+                        document.write("<td>" + answers.textarea + "</td>");
+                        document.write("<td>" + answers.month + "</td>");
+                        document.write("<td>" + answers.email + "</td></tr>");
+                    }
+
+                </script>
+            </table>
+
+            <div>
+                <p><select class="nameResult" value=" ">
+                    <optgroup label="Посетители сайта, прошедшие опрос" id="FIO">
+
+                        <script language="javascript" type="text/javascript">
+                            var str = '';
+
+                            for (var i = 0, len = localStorage.length; i < len; ++i) {
+                                var answers = JSON.parse(localStorage.getItem(localStorage.key(i)));
+                                str += '<option>' + answers.fullName + '</option>';
+                            }
+
+                            var my_list = document.getElementById("FIO");
+                            my_list.innerHTML = str;
+                        </script>
+                    </optgroup>
+                </select>
+                </p>
+            </div>
+        </article>
+
+        <aside class="aside"><h3>Цитата дня</h3>
+
+            <blockquote>
+                <p class="text1"> В мире, который становится всё более разобщённым, 
+                    опера является тем местом, где мы чувствуем и ощущаем себя, словно дома, 
+                    куда нам постоянно хочется возвращаться. Раз за разом...
+                </p>
+                <cite>"Первоклассный рассказ", <p>Конран Т.</p>
+                </cite>
+            </blockquote>
+
+        </aside>
+
+    </div>
+    <footer class="footer">
+        <span>©2021 Baranova V.S.</span>
+    </footer>
+</div>
+<script src="../js/script.js"></script>
+
+</body>
+</html>

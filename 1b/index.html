@@ -1,0 +1,74 @@
+<!-- 1) задать стиль для заголовков, 
+    имеющих заданный абсолютный размер 
+    и начертание, определенный цвет
+2) затемнение текста
+3) таблица на весь экран 
+
+3.В таблице из 2 строк установите: 
++ в, первой ячейке положение для текста с помощью `background-origin,
++ фоновое изображение с`указанием размера, 
++ разместите текст, разбейте его на 3 колонки с установкой цветной
+    линии заданной ширины между колонками, 
++ примените комбинированное затенение к тексту. 
++ Разбейте текст на 3 параграфа
++ для каждого параграфа Текста создайте отдельный 
+    стиль оформления (шрифт ‚размер, цвет). 
+    
++ Во второй ячейке разместите З картинки 
+    путём наложения последующей на предыдущую, 
+    начиная с`левого-верхнего угла,
++ установите прозрачность‘для картинок. 
++ Разместите 3-кратное анимационное перемещение объекта 
+    от левого края экрана до правого с’изменением цвета и прозрачности,
+    при этом предмет должен совершать вращательные движения:-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1b</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td id="first-td">
+                <h1>What Is Color Therapy?</h1>
+                    <br>
+                    <p id="p1">Color therapy is an alternative therapy that uses colors and their frequencies to heal physical and
+                    emotional problems within the human body.Color therapy is also known as chromopathy, chromotherapy,
+                    or color healing.</p>
+                    <br><br>
+                   <h2>What Is Color Therapy Used For?</h2> 
+                    <br>
+                    <p id="p2">The goal of color therapy is to correct physiological and psychological imbalances in the human
+                    body. For instance, if you're stressed, color therapy can help soothe you so that you can regain
+                    your psychological balance. If you're depressed, color therapy can be used to invigorate you and
+                    give you increased energy.</p>
+                    <br><br>
+                   <h2>When Did Color Therapy Start?</h2> 
+                    <br>
+                   <p id="p3">Color therapy has been around at least since the time of Ancient Egypt. Egyptians believed in the
+                    power of light and used different colors of light to promote healing within the human body. Color
+                    therapy and its connection to the human body has continued to be important in some cultures. Even in
+                    Western societies that tend to prefer modern, institutionalized medicine, natural healers have
+                    continued to use colors to help people improve their physical and emotional health.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="trans">
+                <img id="img1" src="img/mian.png" alt="first">
+                <img id="img2" src="img/3.png" alt="secong">
+                <img id="img3" src="img/2.png" alt="third">
+            </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
